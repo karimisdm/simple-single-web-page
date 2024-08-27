@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+    <title>Barber Salon</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+
+</head>
+<body>
+    <section id="banner">
+    <img class="Logo" src="image/Logo.jpeg">
+    <div class="banner-text">
+    <h1>Beauty Salon</h1>
+    <p>We help you have beautiful hair</p>
+    <div class="banner-btn">
+        <a href="#"> <span></span> Find out</a>
+        <a href="#"> <span></span> Read more</a>
+    </div>
+    </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#Testimonial">Testimonia</a></li>
+                <li><a href="#footer">Meet us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="image/meno.png" id="menu">
+
+    </div>
+    <!--Features-->
+    <section id="feature">
+        <div class="title-text">
+            <p>Features</p>
+            <h1>Why choose us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced Staff</h1>
+                <p>We are a hair and beauty salon specializing in different types of hair work and much more.Our highly qualified team is ready to meet all your beauty needs. </p>
+            </div>
+            <div class="features-img">
+                <img src="image/hairdresser.jpeg">
+            </div>
+        </div>
+    </section>
+
+    <!--Services-->
+    <section id="service">
+        <div class="title-text">
+            <p>Services</p>
+            <h1>We provide better quality</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service"> <img src="image/pic1.jpeg">
+             <div class="overlay"> </div>
+             <div class="service-desc">
+                <h1>Hair Styling</h1>
+                <hr>
+                <p>Women traditionally go to hair salons and get their hair cut by hairdressers/hairstylists. </p>
+
+             </div>
+
+            </div>
+            <div class="single-service"> <img src="image/pic2.jpeg"> <div class="overlay"> </div> 
+             <div class="service-desc">
+                <h1>Hair Styling</h1>
+                <hr>
+                <p>Women traditionally go to hair salons and get their hair cut by hairdressers/hairstylists. </p>
+
+             </div>
+        
+            </div>
+
+
+            <div class="single-service"> <img src="image/pic3.jpeg"> <div class="overlay"> </div> 
+             <div class="service-desc">
+                <h1>Hair Styling</h1>
+                <hr>
+                <p>Women traditionally go to hair salons and get their hair cut by hairdressers/hairstylists. </p>
+
+             </div>
+            </div>
+
+
+            <div class="single-service"> <img src="image/pic4.jpeg"> <div class="overlay"> </div> 
+             <div class="service-desc">
+                <h1>Hair Styling</h1>
+                <hr>
+                <p>Women traditionally go to hair salons and get their hair cut by hairdressers/hairstylists. </p>
+
+             </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Testimonial-->
+    <section id="Testimonial">
+        <div class="title-text">
+            <p>Testimonial</p>
+            <h1>Our Clients Say</h1>
+        </div>
+        <div class="Testimonial-row">
+            <div class="Testimonial-col">
+                <div class="user">
+                    <img src="image/per1.jpeg">
+                </div>
+                <p>The best day of your life begins at VanMarco. From basic to 'all inclusive'.</p>
+
+            </div>
+            <div class="Testimonial-col">
+                <div class="user">
+                    <img src="image/per2.jpeg">
+                </div>
+                <p>The best day of your life begins at VanMarco. From basic to 'all inclusive'.</p>
+
+            </div>
+            <div class="Testimonial-col">
+                <div class="user">
+                    <img src="image/per3.jpeg">
+                </div>
+                <p>The best day of your life begins at VanMarco. From basic to 'all inclusive'.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--footer-->
+    <section id="footer">
+        <div class="title-text">
+            <p>Contact Us</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="footer-row">
+
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p>Monday to Friday: 9am-6pm</p>
+                <p>Sunday: 3pm-7pm</p>
+            </div>
+
+
+            <div class="footer-right">
+                <h1>Get in Touch</h1>
+                <p>Netherlan,Amsterdam,NordStreet</p>
+                <p>+316158724</p>
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <script>
+        var menubtn=document.getElementById("menubtn")
+        var menu=document.getElementById("menu")
+        var sideNav=document.getElementById("sideNav")
+        sideNav.style.right="-180px"
+        menubtn.onclick= function(){
+            if(sideNav.style.right=="-180px"){
+                sideNav.style.right="0"
+            }
+            else{
+                sideNav.style.right="-180px"
+            }
+        }
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	      speed: 1000,
+	      speedAsDuration: true
+        });
+
+
+
+
+    </script>
+
+</body>
+
+</html>
